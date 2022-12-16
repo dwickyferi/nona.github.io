@@ -1,123 +1,39 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
     <head>
-        <!-- Required meta tags -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- Bootstrap CSS -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
-            integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-        <link rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-        <title>.: SOON :.</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="icon" href="img/flowers.png" type="image/x-icon">
+        <title>Flowers</title>
     </head>
-    <style>
-        body,
-        html {
-            height: 100%;
-            margin: 0;
-        }
-        
-        .neon {
-            color: #fff;
-            text-shadow:
-            0 0 5px #fff,
-            0 0 10px #fff,
-            0 0 20px #fff,
-            0 0 40px #ffb3ff,
-            0 0 80px #ffb3ff,
-            0 0 90px #ffb3ff,
-            0 0 100px #ffb3ff,
-            0 0 150px #ffb3ff;
-        }
-
-        .bgimg {
-            background-image: url('https://dwickyferi.github.io/soon.github.io/img/img.jpg');
-            height: 100%;
-            background-position: center;
-            background-size: cover;
-            position: relative;
-            color: white;
-            font-family: "Courier New", Courier, monospace;
-            font-size: 25px;
-        }
-
-        .topleft {
-            position: absolute;
-            top: 0;
-            left: 16px;
-        }
-
-        .bottomleft {
-            position: absolute;
-            bottom: 0;
-            left: 16px;
-        }
-
-        .middle {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            text-align: center;
-        }
-
-        hr {
-            margin: auto;
-            width: 40%;
-        }
-
-        
-    </style>
 
     <body>
-
-        <div class="bgimg">
-            <div class="middle">
-                <h1 class="neon">SOON</h1>
-                <h1 class="neon">ANNIVERSARY</h1>
-                <h1 class="neon">DWICKY & NOZE</h1>
-                <hr>
-                <p id='demo' class="neon"></p>
-            </div>
+        <div class="greetings">
+            <!-- silahkan menambah kata sesuai keinginan dengan <span>text...</span -->
+            <span>D</span>
+            <span>E</span>
+            <span>A</span>
+            <span>R</span>
         </div>
-        <script>
-            // Set the date we're counting down to
-            var countDownDate = new Date( "Jul 3, 2022 00:00:00" ).getTime();
+        <div class="greetings">
+            <!-- silahkan menambah kata sesuai keinginan dengan <span>text...</span -->
+            <span>N</span>
+            <span>O</span>
+            <span>N</span>
+            <span>A</span>
+        </div>
+        <div class="description">
+            <span>Aku ada hadiah spesial buat sayang!!</span>
+        </div>
+        <div class="button">
+            <button>
+                <a href="flower.html">Klik disini</a>
+            </button>
 
-            // Update the count down every 1 second
-            var x = setInterval( function () {
-
-                // Get today's date and time
-                var now = new Date().getTime();
-
-                // Find the distance between now and the count down date
-                var distance = countDownDate - now;
-
-                // Time calculations for days, hours, minutes and seconds
-                var days = Math.floor( distance / ( 1000 * 60 * 60 * 24 ) );
-                var hours = Math.floor( ( distance % ( 1000 * 60 * 60 * 24 ) ) / ( 1000 * 60 * 60 ) );
-                var minutes = Math.floor( ( distance % ( 1000 * 60 * 60 ) ) / ( 1000 * 60 ) );
-                var seconds = Math.floor( ( distance % ( 1000 * 60 ) ) / 1000 );
-
-                // Output the result in an element with id="demo"
-                document.getElementById( "demo" ).innerHTML = days + "d " + hours + "h "
-                    + minutes + "m " + seconds + "s left";
-
-                // If the count down is over, write some text 
-                if ( distance < 0 ) {
-                    clearInterval( x );
-                    document.getElementById( "demo" ).innerHTML = "EXPIRED";
-                }
-            }, 1000 );
-        </script>
-
+        </div>
     </body>
 
 </html>
